@@ -8,7 +8,7 @@ Category.init(
   {
     columnDefs: [
       {
-          headerName: 'E-Commerce',
+          headerName: 'Inventory',
           inventory: [
               { field: 'shirts' },
               { field: 'shorts' },

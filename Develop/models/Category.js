@@ -6,7 +6,18 @@ class Category extends Model {}
 
 Category.init(
   {
-    // define columns
+    columnDefs: [
+      {
+          headerName: 'E-Commerce',
+          inventory: [
+              { field: 'shirts' },
+              { field: 'shorts' },
+              { field: 'music' },
+              { field: 'hats' },
+              { field: 'shoes' },
+          ]
+      }
+  ],
   },
   {
     sequelize,

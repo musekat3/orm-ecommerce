@@ -12,64 +12,64 @@ const ProductTag = require('./ProductTag');
 
 // Tags belongToMany Products (through ProductTag)
 
-class Product extends Model {}
+// class Product extends Model {}
 
-Product.init({
-}, {
-  sequelize,
-  modelName: 'product',
-});
+// Product.init({
+// }, {
+//   sequelize,
+//   modelName: 'product',
+// });
 
-Product.belongsTo(Category, {
-  foreignKey: 'category_id',
-});
+// Product.belongsTo(Category, {
+//   foreignKey: 'category_id',
+// });
 
-Product.belongsToMany(Tag, {
-  through: ProductTag,
-  foreignKey: 'product_id',
-});
+// Product.belongsToMany(Tag, {
+//   through: ProductTag,
+//   foreignKey: 'product_id',
+// });
 
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+// const { Model, DataTypes } = require('sequelize');
+// const sequelize = require('../config/connection');
 
-class Category extends Model {}
+// class Category extends Model {}
 
-Category.init({
-}, {
-  sequelize,
-  modelName: 'category',
-});
+// Category.init({
+// }, {
+//   sequelize,
+//   modelName: 'category',
+// });
 
-Category.hasMany(Product, {
-  foreignKey: 'category_id',
-});
+// Category.hasMany(Product, {
+//   foreignKey: 'category_id',
+// });
 
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+// const { Model, DataTypes } = require('sequelize');
+// const sequelize = require('../config/connection');
 
-class Tag extends Model {}
+// class Tag extends Model {}
 
-Tag.init({
-}, {
-  sequelize,
-  modelName: 'tag',
-});
+// Tag.init({
+// }, {
+//   sequelize,
+//   modelName: 'tag',
+// });
 
-Tag.belongsToMany(Product, {
-  through: ProductTag,
-  foreignKey: 'tag_id',
-});
+// Tag.belongsToMany(Product, {
+//   through: ProductTag,
+//   foreignKey: 'tag_id',
+// });
 
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+// const { Model, DataTypes } = require('sequelize');
+// const sequelize = require('../config/connection');
 
-class ProductTag extends Model {}
+// class ProductTag extends Model {}
 
-ProductTag.init({
-}, {
-  sequelize,
-  modelName: 'product_tag',
-});
+// ProductTag.init({
+// }, {
+//   sequelize,
+//   modelName: 'product_tag',
+// });
 
 module.exports = {
   Product,

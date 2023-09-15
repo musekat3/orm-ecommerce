@@ -31,6 +31,9 @@ THEN the data for each of these routes is displayed in a formatted JSON
 
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
 
-THEN I am able to successfully create, update, and delete data in my database
+THEN I am able to successfully create, update, and delete data in my database 
 
-# Usage 
+# Examples
+![CATEGORIES](https://github.com/musekat3/orm-ecommerce/assets/131501260/33bce926-9004-401c-a43c-cca0bfe4b6db)
+![PRODUCTS](https://github.com/musekat3/orm-ecommerce/assets/131501260/647d3e56-289b-48c6-9c87-dc96a1ca02a1)
+![TAGS](https://github.com/musekat3/orm-ecommerce/assets/131501260/2fb4e772-c507-4986-99e8-d3c03a3acfab)

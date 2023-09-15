@@ -20,14 +20,14 @@ const ProductTag = require('./ProductTag');
 //   modelName: 'product',
 // });
 
-// Product.belongsTo(Category, {
-//   foreignKey: 'category_id',
-// });
+Product.belongsTo(Category, {
+  foreignKey: 'category_id',
+});
 
-// Product.belongsToMany(Tag, {
-//   through: ProductTag,
-//   foreignKey: 'product_id',
-// });
+Product.belongsToMany(Tag, {
+  through: ProductTag,
+  foreignKey: 'product_id',
+});
 
 // const { Model, DataTypes } = require('sequelize');
 // const sequelize = require('../config/connection');
@@ -40,9 +40,9 @@ const ProductTag = require('./ProductTag');
 //   modelName: 'category',
 // });
 
-// Category.hasMany(Product, {
-//   foreignKey: 'category_id',
-// });
+Category.hasMany(Product, {
+  foreignKey: 'category_id',
+});
 
 // const { Model, DataTypes } = require('sequelize');
 // const sequelize = require('../config/connection');
@@ -55,10 +55,10 @@ const ProductTag = require('./ProductTag');
 //   modelName: 'tag',
 // });
 
-// Tag.belongsToMany(Product, {
-//   through: ProductTag,
-//   foreignKey: 'tag_id',
-// });
+Tag.belongsToMany(Product, {
+  through: ProductTag,
+  foreignKey: 'tag_id',
+});
 
 // const { Model, DataTypes } = require('sequelize');
 // const sequelize = require('../config/connection');

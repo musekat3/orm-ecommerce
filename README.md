@@ -2,6 +2,13 @@
 ORM E-Commerce Back-End 
 
 # Installation 
+- npm install
+
+- mysql -u root -p
+
+- npm run seeds
+
+- npm start
 
 # Acceptance Criteria
 GIVEN a functional Express.js API
